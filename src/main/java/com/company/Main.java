@@ -5,7 +5,6 @@ public class Main {
     private static int state = 0;
 
     public static void main(String[] args) {
-        GameLife gameLife = new GameLife();
         int m = 15;
         int n = 10;
         int[][] tab = new int[m][n];
@@ -18,7 +17,7 @@ public class Main {
         do {
             printTab(tab);
             state++;
-            tab = gameLife.stateGeneration(tab);
+            tab = GameLife.stateGeneration(tab);
         }
         while (state < 20);
     }
