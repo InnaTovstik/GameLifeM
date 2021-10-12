@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GameLifeTest {
 
-    int m = 15;
-    int n = 10;
+   private int m = 15;
+   private int n = 10;
 
     @Test
     public void shouldCountNeigboursAlive() {
@@ -41,13 +41,13 @@ public class GameLifeTest {
     }
     @Test
     public void shouldSecondStateGeneration() {
-        int[][] actual = new int[15][10];
+        int[][] actual = new int[m][n];
         actual [2][0]=1;
         actual [2][2]=1;
         actual [3][1]=1;
         actual [3][2]=1;
         actual [4][1]=1;
-        int[][] exspected2 = new int[15][10];
+        int[][] exspected2 = new int[m][n];
         exspected2 [2][2]=1;
         exspected2 [3][0]=1;
         exspected2 [3][2]=1;

@@ -2,7 +2,7 @@ package com.company;
 
 public class GameLife {
 
-    public static int[][] stateGeneration(int[][] tab) {
+        public static int[][] stateGeneration(int[][] tab) {
         int m = tab.length;
         int n = tab[0].length;
         int[][] nextTab = new int[m][n];
